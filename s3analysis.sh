@@ -1,7 +1,7 @@
 #!/bin/bash
 aws s3 ls | cut -d ' ' -f 3 > bucket_list.tmp
    clear
-   echo "   ***   S3 BUCKETS SUMMARY ***"
+   echo "   ***   S3 BUCKETS SUMMARY    ***"
    echo "__________________________________"
    echo
 while read bucket;
