@@ -1,15 +1,15 @@
 # S3 Analysis Tool
 
 ### Usage instructions for Linux and OSX:
-1. Clone repo
+1. Clone repo.
 
     `git clone https://github.com/ymyrovych/s3analysis`
     
-2. Change directory to "s3analysis"
+2. Change directory to `s3analysis`.
 
     `cd s3analysis/`
     
-3. Add executable permissions to "s3analysis.sh"
+3. Add executable permissions to `s3analysis.sh`.
 
     `chmod +x s3analysis.sh`
     
@@ -49,6 +49,6 @@ Resolution: Upgrade your awscli to latest version.
 
 ### NOTES:
 
-Counters of size and quantity of files in S3 buckets use `--recursive` argument and may take a lot of time for execution if bucket contains a lot of files and subdirectories.To avoid waiting it is better to forward output to some text file and run in background.
+Counters of size and quantity of files in S3 buckets are using `--recursive` argument and may take a lot of time for execution if bucket contains a lot of files (>100k) and subdirectories. To avoid waiting it is better to forward output to some text file and run in background.
 
 Tool is verified on Ubuntu 16.04 with awscli 1.15.78 and macOS 10.12 with awscli 1.11.84.
