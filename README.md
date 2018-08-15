@@ -1,30 +1,23 @@
 # S3 Analysis Tool
 
 ### Usage instructions for Linux and OSX:
-1. Clone repo.
 
-    `git clone https://github.com/ymyrovych/s3analysis`
-    
-2. Change directory to `s3analysis`.
-
-    `cd s3analysis/`
-    
-3. Add executable permissions to `s3analysis.sh`.
-
-    `chmod +x s3analysis.sh`
-    
-4. Make sure that latest version of AWS cli is installed and configured correctly.
+1. Make sure that latest version of AWS cli is installed and configured correctly.
 
    Use AWS access key ID of user, which has permissions to access needed S3 buckets.
-   
-5. Run s3analysis.sh tool.
+
+2. Clone repo and change directory to `s3analysis`.
+
+    `git clone https://github.com/ymyrovych/s3analysis && cd s3analysis/`
+    
+3. Run s3analysis.sh tool.
 
    `./s3analysis.sh`
 
 
 ### Expected output is following set of chunks:
 ```
-   ***   S3 BUCKETS SUMMARY ***
+   ***   S3 BUCKETS SUMMARY    ***
 __________________________________
 
 Bucket name:  <name>
