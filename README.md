@@ -42,10 +42,10 @@ You can fix this issue by explicitly providing the correct region location using
 or the region variable in the AWS CLI configuration file.  You can get the bucket's location by running "aws s3api get-bucket-location --bucket BUCKET".
 ```
 
-Resolution: Upgrade your AWS CLI to latest version.
+Resolution: Upgrade your AWS CLI to latest version. Error was not observerd on AWS CLI 1.15.78.
 
 ### Notes
 
 In big buckets (>100k objects) size and quantity calculation may take a lot of time. To avoid waiting just forward output to some file and run tool in background.
 
-Tool is verified on Ubuntu 16.04 with awscli 1.15.78 and macOS Sierra 10.12.6 with awscli 1.15.70.
+Tool is verified on Ubuntu 16.04 with AWS CLI 1.15.78 and macOS Sierra 10.12.6 with AWS CLI 1.15.70.
