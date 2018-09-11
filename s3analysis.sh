@@ -1,4 +1,10 @@
 #!/bin/bash
+
+command -v aws > /dev/null || {
+  echo "[ERROR] AWS cli is missing. Please install it and configure to use needed account."
+  exit 1
+}
+
 aws s3 ls | cut -d ' ' -f 3 > bucket_list.tmp
 bucket_num=`wc -l < bucket_list.tmp`
  if [[ $bucket_num -eq 0 ]]; then
